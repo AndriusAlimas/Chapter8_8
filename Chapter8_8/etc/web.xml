@@ -5,4 +5,22 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
+  <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>*.jsp</url-pattern>
+  		<el-ignored>false</el-ignored>
+  		<scripting-invalid>true</scripting-invalid>
+  	</jsp-property-group>
+  </jsp-config>
+  
+  <servlet>
+  	<servlet-name>MyServlet</servlet-name>
+  	<servlet-class>com.example.servlet.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MyServlet</servlet-name>
+  	<url-pattern>/go</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
